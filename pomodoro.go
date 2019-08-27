@@ -28,6 +28,13 @@ func main() {
 
 	fmt.Printf("Running pomodoro for %d minutes\n", i)
 
+	go func() {
+		for {
+			time.Sleep(40 * time.Minute)
+			err = exec.Command("vlc", "waterMsg.mp3").Run()
+		}
+	}()
+
 	for i > 0 {
 		time.Sleep(1 * time.Minute)
 		i--

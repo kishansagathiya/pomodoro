@@ -1,6 +1,8 @@
 # pomodoro
 Simple timer built for personal use
 
+- On every 45 Min, it reminds to drink water and give rest to eyes
+
 NOTE: It assumes that you have VLC installed and you are on Linux.
 
 USAGE: 
