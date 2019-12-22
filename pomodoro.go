@@ -46,14 +46,7 @@ func main() {
 		fmt.Printf("Not on time, You should be starting at 9AM, but it's %s\n\n", tNow.Format(time.Kitchen))
 	}
 
-	fmt.Printf(
-		`
-		These are your goals:
-		- Become a really really good programmer
-		- Be fit
-		- Be loved, wanted, charismatic, convincing, powerful and influencial
-		`,
-	)
+	fmt.Printf("These are your goals:\n- Become a really really good programmer\n- Be fit\n- Be loved, wanted, charismatic, convincing, powerful and influencial\n\n")
 	fmt.Printf("Running pomodoro for %d minutes\n", i)
 
 	signalChan := make(chan os.Signal)
